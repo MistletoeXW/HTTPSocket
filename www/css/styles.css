@@ -1,0 +1,154 @@
+html,body{
+  font-family: 'Architects Daughter', sans-serif;
+}
+body{
+  display: block;
+  margin: 50px;
+}
+h1 {
+    padding-bottom: .3em;
+    font-size: 2.25em;
+    line-height: 1.2;
+    border-bottom: 1px solid #eee;
+    text-align: center;
+}
+h2 {
+    padding-bottom: .3em;
+    font-size: 1.75em;
+    line-height: 1.225;
+    border-bottom: 1px solid #eee;
+    text-align: center;
+}
+p {
+    display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    text-align: center;
+}
+h3 {
+    display: block;
+    font-size: 1.17em;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-weight: bold;
+    text-align: center;
+}
+a {
+  text-decoration: none;
+}
+
+.content{
+  width: 50%;
+  position: absolute;
+  left: 10rem;
+  margin: 0 10%;
+  background-color: white;
+  height: 100%;
+}
+
+#oncgi{
+  
+  width: 100%!important;
+}
+
+ul{
+  padding:0;
+}
+
+li{
+  list-style: none;
+  opacity: 0.4;
+  background-color: #f8f8f8;
+  padding: 1rem;
+  border-radius: 0.25rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+li img{
+  vertical-align: middle;
+  width: 5rem;
+  margin-right: 1.5rem;
+}
+
+button{
+  margin-bottom: 1rem!important;
+  width: 19%!important;
+  font-size: 18px!important;
+}
+
+textarea{
+  outline: none;
+  width: 95.9%;
+  height:9.3rem;
+  padding: 0.5rem 2%;
+  border-radius: 0.25rem;
+  border:3px solid black;
+  border-color: #ff7680;
+  margin-bottom: 1rem;
+  resize: none;
+  font-size:1.2rem;
+}
+
+input{
+  outline: none;
+  width: 95.9%;
+  height:2rem;
+  padding: 0.5rem 2%;
+  border-radius: 0.25rem;
+  border:3px solid black;
+  border-color: #4cb0f9;
+  margin-bottom: 1rem;
+  resize: none;
+  font-size:1.2rem;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0px;
+    width: 100%;
+    break-inside: auto;
+}
+
+table tr,th{
+  border: 1px solid rgb(204, 204, 204);
+  margin: 0px;
+  padding: 0px;
+}
+
+
+th,td{
+    display: table-cell;
+    vertical-align: inherit;
+    border: 1px solid rgb(204, 204, 204);
+    height: 2rem;
+    text-align: center;
+}
+
+td:nth-child(1){
+  width: 15%;
+}
+td:nth-child(2){
+  width: 30%;
+}
+td:nth-child(3){
+  width: 55%;
+}
+.choose{
+  background-color: #B0E2FF!important;
+
+}
+
+table tr:nth-child(2n) {
+    background-color: rgb(248, 248, 248);
+}
+table tr:nth-child(2n+1) {
+    background-color: white;
+}
+table tr th:last-child, table tr td:last-child {
+    margin-bottom: 0px;
+}
