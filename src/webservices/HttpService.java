@@ -74,7 +74,7 @@ public class HttpService extends Thread{
             }
             else if("POST".equalsIgnoreCase(method)){
                 String str=getline(inputStream,contentlength);
-                System.out.println("客户端发送数据:"+str);
+                System.out.println("客户端发送数据");
                 respondPOST(str);
             }
             inputStream.close();
