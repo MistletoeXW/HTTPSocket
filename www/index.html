@@ -1,42 +1,42 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <meta charset="utf-8"/>
-    <title>分布式Lab3页面</title>
-    <meta content="width=device-width, initial-scale=1.0, maximum=1.0, user-scalable=0" name="viewport" />
+    <title>计算机网络课程研讨一</title>
+    <meta content="width=device-width, initial-scale=1.0, maximum=1.0, user-scalable=0" name="viewport"/>
     <link rel="shortcut icon" href="./images/head.jpg">
-    <link rel="stylesheet" href="./css/styles.css" />
-    <link rel="stylesheet" href="./css/buttons.css" />
-  </head>
+    <link rel="stylesheet" href="./css/styles.css"/>
+    <link rel="stylesheet" href="./css/buttons.css"/>
+</head>
 
-  <body>
+<body>
 
-  <div class="view">
+<div class="view">
 
-    <div class="content" id="about" >
-      <div class="title">
-        <h1>计算机网络课程研讨一</h1>
-        <p>计算机科学与工程学院</p>
-        <p>徐文  16121666 李瑞轩 16121670</p>
-      </div>
-
-      <input type="text" id="userId"
+    <div class="content" id="about">
+        <div class="title">
+            <h1>计算机网络课程研讨一</h1>
+            <p>计算机科学与工程学院</p>
+            <p>徐文 16121666 李瑞轩 16121670</p>
+        </div>
+        <div onkeydown="keyLogin();">
+            <input type="text" id="userId"
                    placeholder="请输入学号"
                    onmouseover="this.style.borderColor='#fec04e';this.style.backgroundColor='#FFFFF0'"
                    onmouseout="this.style.borderColor='#4cb0f9';this.style.backgroundColor='#ffffff'"
-                 >
-      <input type="password" id="password"
-             placeholder="请输入密码"
-             onmouseover="this.style.borderColor='#fec04e';this.style.backgroundColor='#FFFFF0'"
-             onmouseout="this.style.borderColor='#4cb0f9';this.style.backgroundColor='#ffffff'">
-      <button id="oncgi" class="button button-primary button-pill button-jumbo" type="button"> 提交</button>
-
+            >
+            <input type="password" id="password"
+                   placeholder="请输入密码"
+                   onmouseover="this.style.borderColor='#fec04e';this.style.backgroundColor='#FFFFF0'"
+                   onmouseout="this.style.borderColor='#4cb0f9';this.style.backgroundColor='#ffffff'">
+        </div>
+        <button id="oncgi" class="button button-primary button-pill button-jumbo" type="button"> 提交</button>
 
 
     </div>
-  </div>
-    <script src="./js/jquery-3.2.1.min.js"></script>
-    <script src="./js/cgipost.js"></script>
-  </body>
+</div>
+<script src="./js/jquery-3.2.1.min.js"></script>
+<script src="./js/cgipost.js"></script>
+</body>
 
 </html>
