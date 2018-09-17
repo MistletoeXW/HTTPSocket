@@ -1,8 +1,7 @@
 $('#oncgi').click(function(){
 	$.post("/index.html",
 		{userId:$('#userId').val(),password:$('#password').val()},
-        function(data,status){
-        console.log(("【已发送POST请求】\n返回数据为: \n" + data + "\n状态为: " + status));
+        function(data){
         var res=data.split(" ");
         console.log(res);
         alert(
