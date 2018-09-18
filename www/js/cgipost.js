@@ -4,7 +4,9 @@ function keyLogin() {
     }
 }
 
+
 $('#oncgi').click(function () {
+
     $.post("/index.html",
         {userId: $('#userId').val(), password: $('#password').val()},
         function (data, status) {

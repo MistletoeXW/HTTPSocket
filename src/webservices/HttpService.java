@@ -53,7 +53,7 @@ public class HttpService extends Thread{
             int contentlength=0;
             do {
                 line = getline(inputStream, 0);
-                //System.out.print(line);
+                System.out.print(line);
                 //如果有Content-Length消息头时取出
                 if (line.startsWith("Content-Length")) {
                     contentlength = Integer.parseInt(line.split(":")[1]

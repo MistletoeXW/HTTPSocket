@@ -26,7 +26,6 @@ public class HttpsService extends Thread{
 
         try {
 
-
             host = "github.com";
 //            host = "blog.csdn.net";
 //            host = "www.baidu.com";
