@@ -4,7 +4,6 @@ function keyLogin() {
     }
 }
 
-
 $('#oncgi').click(function () {
 
     $.post("/index.html",

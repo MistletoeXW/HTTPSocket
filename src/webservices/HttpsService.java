@@ -39,9 +39,7 @@ public class HttpsService extends Thread{
         try {
 
             /*
-             * Set up a key manager for client authentication
-             * if asked by the server.  Use the implementation's
-             * default TrustStore and secureRandom routines.
+             * 使用jdk自带的keystore，里面包含官方的证书，主流网站都有
              */
             SSLSocketFactory factory = null;
             try {

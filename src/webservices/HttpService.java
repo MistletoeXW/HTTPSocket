@@ -61,7 +61,8 @@ public class HttpService extends Thread{
                 }
                 //回车换行表示请求头结束
             } while (!line.equals("\r\n"));
-            //System.out.println("-----------http内容结束-----------\n\n");
+            System.out.println("-----------http内容结束-----------\n\n");
+
             if("GET".equalsIgnoreCase(method)){
                 //判断定位于文件夹或文件
                 if (resourcepath.endsWith("/")) {
@@ -70,7 +71,6 @@ public class HttpService extends Thread{
                 else {
                     respondGET(resourcepath,socketclient);
                 }
-
             }
             else if("POST".equalsIgnoreCase(method)){
                 String str=getline(inputStream,contentlength);
@@ -104,10 +104,10 @@ public class HttpService extends Thread{
                 System.out.print("[Server] 返回GET请求文件 => "+ filename);
             File fileToSend = new File(home+filename);
             if (fileToSend.exists() && !fileToSend.isDirectory()) {
-                out.println("HTTP/1.0 200 OK");//返回应答消息
+                out.println("HTTP/1.0 200 OK");                              //返回应答消息
                 out.println("Content-Type: "+type+";charset=" + encoding);
-                out.println("Content-Length: " + fileToSend.length());// 返回内容字节数
-                out.println();// 根据 HTTP 协议, 空行将结束头信息
+                out.println("Content-Length: " + fileToSend.length());      // 返回内容字节数
+                out.println();                                              // 根据 HTTP 协议, 空行将结束头信息
 
                 FileInputStream fis = new FileInputStream(fileToSend);
                 byte[] tmpByteArr = new byte[100];
@@ -120,10 +120,10 @@ public class HttpService extends Thread{
             }
             else {
                 fileToSend = new File(home+"/html/error/index.html");
-                out.println("HTTP/1.0 200 OK");//返回应答消息
+                out.println("HTTP/1.0 200 OK");                                 //返回应答消息
                 out.println("Content-Type: "+"text/html"+";charset=" + encoding);
-                out.println("Content-Length: " + fileToSend.length());// 返回内容字节数
-                out.println();// 根据 HTTP 协议, 空行将结束头信息
+                out.println("Content-Length: " + fileToSend.length());          // 返回内容字节数
+                out.println();                                                  // 根据 HTTP 协议, 空行将结束头信息
 
                 FileInputStream fis = new FileInputStream(fileToSend);
                 byte[] tmpByteArr = new byte[100];
@@ -171,7 +171,7 @@ public class HttpService extends Thread{
         System.out.println("[Server] 回应POST请求\n ");
         try {
 
-            out.println("HTTP/1.1 200 OK");
+            out.println("HTTP/1.1 200 OK");           //返回应答消息
             out.println("charset:UTF-8");
             out.println("Content-Type:text/plain");
             out.println();
